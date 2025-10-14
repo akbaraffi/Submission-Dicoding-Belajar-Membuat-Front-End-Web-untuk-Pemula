@@ -1,7 +1,120 @@
-header{
-background: black;
-color: white;
-text-align: center;
-margin: 0;
-padding: 0px;
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: auto;
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.h2-list{
+    text-align: start;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 15px;
+}
+
+form div {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+form#searchBook {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+form#searchBook input {
+    width: 2000px;
+    height: 15px;
+}
+
+.checkbox {
+    flex-direction: row;
+    gap: 5px;
+}
+
+button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+}
+
+button:hover {
+    background-color: gray;
+}
+
+#incompleteBookList,
+#completeBookList {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#incompleteBookList button,
+#completeBookList button {
+    width: 150px;
+}
+
+button[data-testid="bookItemIsCompleteButton"] {
+    background: green;
+}
+
+button[data-testid="bookItemIsCompleteButton"]:hover {
+    background: lightgreen;
+}
+
+button[data-testid="bookItemDeleteButton"] {
+    background: red;
+}
+
+button[data-testid="bookItemDeleteButton"]:hover {
+    background: lightcoral;
+}
+
+button[data-testid="bookItemEditButton"] {
+    background: darkslategray;
+}
+
+button[data-testid="bookItemEditButton"]:hover {
+    background: lightseagreen;
 }
